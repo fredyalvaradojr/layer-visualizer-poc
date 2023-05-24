@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  max-width: none;
+}
+
+.main-image {
+  position: relative;
+  width: 475px;
+  height: 475px;
+}
+
+.main-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top left;
+  transform: scale(0.475);
+}
+
+.main-image-container img {
+    position: absolute;
+  }
+  
+  .main-choice-title {
+        margin-bottom: 1rem;
+        font-size: 0.875em;
+  }
+
+  .choice-title {
+        margin-bottom: 10px;
+        font-size: 0.875em;
+    color: rgb(38, 38, 38);
+  }
+
+  .choice-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .choice-list-item {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .choice-button {
+    position: relative;
+    display: table;
+    padding: 5px;
+    
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid rgb(204, 204, 204);;
+    border-radius: 3px;
+    margin: 0px 10px 10px 0px;
+    padding: 3px;
+  }
+
+  .active-choice {
+    border: 2px solid rgb(249, 99, 2);
+  }
+
+  .choice-image {
+    width: 98px;
+  }
+
+  .choice-description {
+    display: table-caption;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 16px;
+    caption-side: bottom;
+    height: 40px;
+    width: 98px;
+  }
+
+  .choice-description-text {
+    position: relative;
+    top: 50%;
+    text-align: left;
+    left: 2%;
+    transform: translateY(-59%);
+  }
+
+  .swatch-choice {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
